@@ -1,0 +1,29 @@
+
+TASK: HSHEX MONO COMP
+
+
+In order to run the program on either a LINUX machine or WSL, use the following commands on your terminal, pressing
+enter after each one. 
+
+Firstly, ensure all relevant hshex files are present on your directory and you have permission to access them.
+
+1. gcc -o process process.c
+(compile the program)
+
+2. ./process "imagename.hxhex" "new output file name"
+e.g ./process coffee.hshex coffenew
+(applying and running the code on our images)
+
+3. chmod +x hsconvert
+(makes the file executable, so you can run run it as a program)
+
+4. ./hsconvert -f PPM input_file output_file.ppm
+e.g ./process coffeenew coffeenew.ppm
+(running "hsconvert: on the new file created and turning it into a ppm to visualise the image. Make sure relevant ppm files are installed and present during the compilation and running of the code.)
+
+To run multiple files:
+5. ./process "imagenameone.hshex" "imagenameoneoutput" "imagenametwo.hshex" "imagenametwooutput" *as many as you please*
+
+
+
+
